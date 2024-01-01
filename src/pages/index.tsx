@@ -55,7 +55,7 @@ export default function Home() {
                 />
         </header>
           <div className='text-center h-screen flex items-center justify-center z-10 relative'>
-            <div className='h-[100%] max-w-full max-w-[72rem] px-4 sm:px-6 pt-12'>
+            <div className='max-w-full max-w-[72rem] px-4 sm:px-6 pt-12'>
               <h1 className='break-words text-2xl sm:text-6xl lg:text-6xl sm:mt-20 font-extrabold leading-none drop-shadow tracking-tight'>
                 Noto Peninsula (Japan) Earthquake donation fund.
                 <p className='break-words mt-8 text-2xl sm:text-6xl lg:text-5xl font-extrabold leading-none drop-shadow tracking-tight'>
