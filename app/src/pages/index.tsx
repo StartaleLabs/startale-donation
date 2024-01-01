@@ -24,7 +24,7 @@ export default function Home() {
       </header>
       <div className="flex-1 grid place-items-center">
         <div>
-          <h1 className="text-3xl md:text-6xl font-bold text-center break-words !leading-[1.5]">
+          <h1 className="text-3xl md:text-5xl font-bold text-center break-words !leading-[1.5]">
             Noto Peninsula (Japan) Earthquake donation fund. /
             令和6年能登半島地震災害支援募金
           </h1>
