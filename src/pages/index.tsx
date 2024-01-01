@@ -90,7 +90,7 @@ export default function Home() {
               />
             </Link>
             <Link
-        href={`https://x.com/intent/tweet?text=令和6年能登半島地震 緊急支援募金%0ANoto Peninsula (Japan) Earthquake donation fund.%0A（Startale/ Astar）%0A&url=https://donation.startale.com/`}
+        href={`https://x.com/intent/tweet?text=令和6年能登半島地震 緊急支援募金%0ANoto Peninsula (Japan) Earthquake donation fund.%0A（Startale/ Astar）%20%23ASTAR%20%23Web3%0A&url=https://donation.startale.com/`}
         target="_blank"
         className="ml-8 mb-20 flex items-center leading-none gap-1 p-5 border border-white rounded-[18px] bg-[rgba(255,255,255,0.30)] text-[24px]"
           >
