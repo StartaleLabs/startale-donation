@@ -55,28 +55,28 @@ export default function Home() {
                 />
         </header>
           <div className='text-center h-screen flex items-center justify-center z-10 relative'>
-            <div className='max-w-[72rem] px-4 sm:px-6 pt-12'>
-              <h1 className='text-2xl sm:text-6xl lg:text-6xl font-extrabold leading-none drop-shadow tracking-tight'>
+            <div className='max-w-full max-w-[72rem] px-4 sm:px-6 pt-12'>
+              <h1 className='break-words text-2xl sm:text-6xl lg:text-6xl sm:mt-20 font-extrabold leading-none drop-shadow tracking-tight'>
                 Noto Peninsula (Japan) Earthquake donation fund.
-                <p className='mt-8 text-2xl sm:text-6xl lg:text-5xl font-extrabold leading-none drop-shadow tracking-tight'>
+                <p className='break-words mt-8 text-2xl sm:text-6xl lg:text-5xl font-extrabold leading-none drop-shadow tracking-tight'>
                   (令和6年能登半島地震災害支援募金)
                 </p>
               </h1>
-              <p className='text-2xl sm:text-4xl mt-6 sm:mt-10'>
+              <p className='break-words text-2xl sm:text-4xl mt-6 sm:mt-10'>
                 Astar is with all people who are affected by the disaster.
               </p>
-              <p className='font-extrabold text-2xl sm:text-4xl mt-10 sm:mt-10 sm:mb-14'>
+              <p className='break-words font-extrabold text-2xl sm:text-4xl mt-10 sm:mt-10 sm:mb-14 mb-14'>
                 Astar Native Address
                 Y6bqhr65aCCydqbrD7gCNZKKSxK7k9pU4mNBhfMEy8MyCnj
               </p>
-              <p className='text-2xl sm:text-2xl mb-8 sm:mb-14'>
+              <p className='break-words text-2xl sm:text-2xl mb-8 sm:mb-14'>
                 皆さまからのご寄付はAstar FoundationおよびStartale
                 Labsを通じてgas手数料や税金等（消費税含む）を除き全て本災害の緊急救援活動、被災地復旧支援として被災者や被災地のために活用させていただきます。
                 今後の詳しい使いみちと寄付報告は、この募金ページのほか、Xなどを通じてお知らせします。
               </p>
               <div className="mt-12 flex justify-center">
             <Link
-              href="https://astar.subscan.io"
+              href="https://astar.subscan.io/account/Y6bqhr65aCCydqbrD7gCNZKKSxK7k9pU4mNBhfMEy8MyCnj"
               target="_blank"
               className="flex items-center leading-none gap-1 p-5 border border-white rounded-[18px] bg-[rgba(255,255,255,0.30)] text-[24px]"
             >
