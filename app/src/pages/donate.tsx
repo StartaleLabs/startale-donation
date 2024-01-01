@@ -1,11 +1,12 @@
 import React from 'react';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const DonatePage = () => {
   return (
     <div>
-      <div className='bg-black relative'>
+      <div className='bg-black relative overflow-hidden'>
         <div className='absolute z-0 w-full h-screen flex items-center'>
           <video
             webkit-playsinline
@@ -43,6 +44,15 @@ const DonatePage = () => {
             height='1728'
             data-not-lazy
           />
+        <header className="pt-8 w-full flex justify-center">
+                <Image
+                    src="/images/logo.png"
+                    width={188}
+                    height={60}
+                    alt=""
+                    className={"w-[94px] md:w-[188px]"}
+                />
+        </header>
           <div className='text-center h-screen flex items-center justify-center z-10 relative'>
             <div className='max-w-[72rem] px-4 sm:px-6 pt-12'>
               <h1 className='text-2xl sm:text-6xl lg:text-6xl font-extrabold leading-none drop-shadow tracking-tight'>
@@ -64,7 +74,22 @@ const DonatePage = () => {
                 Labsを通じてgas手数料や税金等（消費税含む）を除き全て本災害の緊急救援活動、被災地復旧支援として被災者や被災地のために活用させていただきます。
                 今後の詳しい使いみちと寄付報告は、この募金ページのほか、Xなどを通じてお知らせします。
               </p>
-              {/* <div className='sm:flex justify-center space-y-4 sm:space-y-0 sm:space-x-4'></div> */}
+              <div className="mt-12 flex justify-center">
+            <Link
+              href="https://astar.subscan.io"
+              target="_blank"
+              className="flex items-center leading-none gap-1 p-5 border border-white rounded-[18px] bg-[rgba(255,255,255,0.30)] text-[24px]"
+            >
+              Block Explorer
+              <Image
+                src="/images/icon_external.png"
+                width={24}
+                height={24}
+                alt=""
+                className="flx-shrink-0"
+              />
+            </Link>
+          </div>
             </div>
           </div>
         </div>

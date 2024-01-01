@@ -2,41 +2,79 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-start py-6 md:py-10 px-6 md:px-8 ${inter.className}`}
-      style={{
-        background:
-          "linear-gradient(121deg, #E6007A -5.77%, #703AC2 13.57%, #0070EB 34.18%, #0297FB 58.08%, #0AE2FF 74.93%)",
-      }}
-    >
-      <header className={"w-full flex"}>
-        <Image
-          src="/images/logo.png"
-          width={188}
-          height={60}
-          alt=""
-          className={"w-[94px] md:w-[188px]"}
-        />
-      </header>
-      <div className="flex-1 grid place-items-center">
-        <div>
-          <h1 className="text-3xl md:text-5xl font-bold text-center break-words !leading-[1.5]">
-            Noto Peninsula (Japan) Earthquake donation fund.
-            <br />
-            (令和6年能登半島地震災害支援募金)
-          </h1>
-          <p className="mt-[60px] text-center text-[20px] md:text-[24px]">
-            Astar is with all people who are affected by the disaster. <br />
-          </p>
-          <p className="mt-[12px] text-center text-[20px] md:text-[24px]">
-            Astar Native Address:
-            Y6bqhr65aCCydqbrD7gCNZKKSxK7k9pU4mNBhfMEy8MyCnj
-          </p>
-          <div className="mt-12 flex justify-center">
+    <main>
+     <div>
+      <div className='bg-black relative overflow-hidden'>
+        <div className='absolute z-0 w-full h-screen flex items-center'>
+          <video
+            webkit-playsinline
+            playsInline
+            muted
+            autoPlay
+            loop
+            data-not-lazy
+          >
+            <source src='/images/astar.mp4' type='video/mp4' />
+          </video>
+        </div>
+        <div className='mix-blend-screen'>
+          <Image
+            className='absolute z-[-1] w-full h-full'
+            src='/images/zkevm-bg.webp'
+            alt=''
+            width='1728'
+            height='1429'
+            data-not-lazy
+          />
+          <Image
+            className='absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover'
+            src='/images/space-cloud.webp'
+            alt=''
+            width='1728'
+            height='1281'
+            data-not-lazy
+          />
+          <Image
+            className='fixed z-[2] portrait:h-screen landscape:w-screen object-cover'
+            src='/images/space-stars.svg'
+            alt=''
+            width='1728'
+            height='1728'
+            data-not-lazy
+          />
+        <header className="pt-8 w-full flex justify-center">
+                <Image
+                    src="/images/logo.png"
+                    width={188}
+                    height={60}
+                    alt=""
+                    className={"w-[94px] md:w-[188px]"}
+                />
+        </header>
+          <div className='text-center h-screen flex items-center justify-center z-10 relative'>
+            <div className='max-w-[72rem] px-4 sm:px-6 pt-12'>
+              <h1 className='text-2xl sm:text-6xl lg:text-6xl font-extrabold leading-none drop-shadow tracking-tight'>
+                Noto Peninsula (Japan) Earthquake donation fund.
+                <p className='mt-8 text-2xl sm:text-6xl lg:text-5xl font-extrabold leading-none drop-shadow tracking-tight'>
+                  (令和6年能登半島地震災害支援募金)
+                </p>
+              </h1>
+              <p className='text-2xl sm:text-4xl mt-6 sm:mt-10'>
+                Astar is with all people who are affected by the disaster.
+              </p>
+              <p className='font-extrabold text-2xl sm:text-4xl mt-10 sm:mt-10 sm:mb-14'>
+                Astar Native Address
+                Y6bqhr65aCCydqbrD7gCNZKKSxK7k9pU4mNBhfMEy8MyCnj
+              </p>
+              <p className='text-2xl sm:text-2xl mb-8 sm:mb-14'>
+                皆さまからのご寄付はAstar FoundationおよびStartale
+                Labsを通じてgas手数料や税金等（消費税含む）を除き全て本災害の緊急救援活動、被災地復旧支援として被災者や被災地のために活用させていただきます。
+                今後の詳しい使いみちと寄付報告は、この募金ページのほか、Xなどを通じてお知らせします。
+              </p>
+              <div className="mt-12 flex justify-center">
             <Link
               href="https://astar.subscan.io"
               target="_blank"
@@ -52,8 +90,11 @@ export default function Home() {
               />
             </Link>
           </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
     </main>
   );
 }
