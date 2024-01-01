@@ -19,7 +19,7 @@ export default function Home() {
           width={188}
           height={60}
           alt=""
-          className={"w-[94px] md:w-auto"}
+          className={"w-[94px] md:w-[188px]"}
         />
       </header>
       <div className="flex-1 grid place-items-center">
