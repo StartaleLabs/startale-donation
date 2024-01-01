@@ -7,24 +7,30 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-start py-10 px-8 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center justify-start py-6 md:py-10 px-6 md:px-8 ${inter.className}`}
       style={{
         background:
           "linear-gradient(121deg, #E6007A -5.77%, #703AC2 13.57%, #0070EB 34.18%, #0297FB 58.08%, #0AE2FF 74.93%)",
       }}
     >
       <header className={"w-full flex"}>
-        <Image src="/images/logo.png" width={188} height={60} alt="" />
+        <Image
+          src="/images/logo.png"
+          width={188}
+          height={60}
+          alt=""
+          className={"w-[94px] md:w-auto"}
+        />
       </header>
       <div className="flex-1 grid place-items-center">
         <div>
-          <h1 className="text-6xl font-bold text-center break-words leading-[1.5]">
+          <h1 className="text-3xl md:text-6xl font-bold text-center break-words leading-[1.5]">
             Noto Peninsula (Japan) Earthquake donation fund. /
             令和6年能登半島地震災害支援募金
           </h1>
-          <p className="mt-[60px] text-center text-[24px]">
+          <p className="mt-[60px] text-center text-[20px] md:text-[24px]">
             Astar is with all people who are affected by the disaster. <br />
-            Astar Native Address: XXXXXXX / Ethereum Address: YYYYYYYYYY
+            Astar Native Address: XXXXXXX / <br className="md:hidden"/> Ethereum Address: YYYYYYYYYY
           </p>
           <div className="mt-12 flex justify-center">
             <Link
