@@ -17,13 +17,13 @@ export default function Home() {
             loop
             data-not-lazy
           >
-            <source src='https://startalelabs.github.io/startale-donation/images/astar.mp4' type='video/mp4' />
+            <source src='startale-donation-qgunqabl6-charity-7369b504.vercel.app/images/astar.mp4' type='video/mp4' />
           </video>
         </div>
         <div className='mix-blend-screen'>
           <Image
             className='absolute z-[-1] w-full h-full'
-            src='https://startalelabs.github.io/startale-donation//images/zkevm-bg.webp'
+            src='startale-donation-qgunqabl6-charity-7369b504.vercel.app/images/zkevm-bg.webp'
             alt=''
             width='1728'
             height='1429'
@@ -31,7 +31,7 @@ export default function Home() {
           />
           <Image
             className='absolute z-[1] mix-blend-overlay portrait:h-screen landscape:w-screen object-cover'
-            src='https://startalelabs.github.io/startale-donation//images/space-cloud.webp'
+            src='startale-donation-qgunqabl6-charity-7369b504.vercel.app/images/space-cloud.webp'
             alt=''
             width='1728'
             height='1281'
@@ -39,7 +39,7 @@ export default function Home() {
           />
           <Image
             className='fixed z-[2] portrait:h-screen landscape:w-screen object-cover'
-            src='https://startalelabs.github.io/startale-donation//images/space-stars.svg'
+            src='startale-donation-qgunqabl6-charity-7369b504.vercel.app/images/space-stars.svg'
             alt=''
             width='1728'
             height='1728'
@@ -47,7 +47,7 @@ export default function Home() {
           />
         <header className="pt-8 w-full flex justify-center">
                 <Image
-                    src="https://startalelabs.github.io/startale-donation//images/logo.png"
+                    src="startale-donation-qgunqabl6-charity-7369b504.vercel.app/images/logo.png"
                     width={188}
                     height={60}
                     alt=""
@@ -82,7 +82,7 @@ export default function Home() {
             >
               Block Explorer
               <Image
-                src="https://startalelabs.github.io/startale-donation//images/icon_external.png"
+                src="startale-donation-qgunqabl6-charity-7369b504.vercel.app/images/icon_external.png"
                 width={24}
                 height={24}
                 alt=""
