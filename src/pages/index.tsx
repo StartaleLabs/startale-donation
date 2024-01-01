@@ -8,7 +8,7 @@ export default function Home() {
     <main>
      <div>
       <div className='bg-black relative overflow-hidden'>
-        <div className='absolute z-0 w-full h-screen flex items-center'>
+        <div className='absolute min-h-screen z-0 w-full h-screen flex items-center'>
           <video
             webkit-playsinline
             playsInline
@@ -20,7 +20,7 @@ export default function Home() {
             <source src='/images/astar.mp4' type='video/mp4' />
           </video>
         </div>
-        <div className='mix-blend-screen'>
+        <div className='mix-blend-screen overflow-y-auto'>
           <Image
             className='absolute z-[-1] w-full h-full'
             src='/images/zkevm-bg.webp'
@@ -54,9 +54,9 @@ export default function Home() {
                     className={"w-[94px] md:w-[188px]"}
                 />
         </header>
-          <div className='text-center h-screen flex items-center justify-center z-10 relative'>
+          <div className='min-h-screen text-center h-screen flex items-center justify-center z-10 relative'>
             <div className='max-w-full max-w-[72rem] px-4 sm:px-6 pt-12'>
-              <h1 className='break-words text-2xl sm:text-6xl lg:text-6xl sm:mt-20 font-extrabold leading-none drop-shadow tracking-tight'>
+              <h1 className='break-words text-2xl sm:text-6xl lg:text-6xl mt-[20rem] sm:mt-20 font-extrabold leading-none drop-shadow tracking-tight'>
                 Noto Peninsula (Japan) Earthquake donation fund.
                 <p className='break-words mt-8 text-2xl sm:text-6xl lg:text-5xl font-extrabold leading-none drop-shadow tracking-tight'>
                   (令和6年能登半島地震災害支援募金)
@@ -66,7 +66,7 @@ export default function Home() {
                 Astar is with all people who are affected by the disaster.
               </p>
               <p className='break-words font-extrabold text-2xl sm:text-4xl mt-10 sm:mt-10 sm:mb-14 mb-14'>
-                Astar Native Address
+                Astar Native Address:
                 Y6bqhr65aCCydqbrD7gCNZKKSxK7k9pU4mNBhfMEy8MyCnj
               </p>
               <p className='break-words text-2xl sm:text-2xl mb-8 sm:mb-14'>
@@ -78,7 +78,7 @@ export default function Home() {
             <Link
               href="https://astar.subscan.io/account/Y6bqhr65aCCydqbrD7gCNZKKSxK7k9pU4mNBhfMEy8MyCnj"
               target="_blank"
-              className="flex items-center leading-none gap-1 p-5 border border-white rounded-[18px] bg-[rgba(255,255,255,0.30)] text-[24px]"
+              className="mb-20 flex items-center leading-none gap-1 p-5 border border-white rounded-[18px] bg-[rgba(255,255,255,0.30)] text-[24px]"
             >
               Block Explorer
               <Image
