@@ -15,7 +15,7 @@ const DonatePage = () => {
             loop
             data-not-lazy
           >
-            <source src='/videos/astar.mp4' type='video/mp4' />
+            <source src='/images/astar.mp4' type='video/mp4' />
           </video>
         </div>
         <div className='mix-blend-screen'>
@@ -44,14 +44,27 @@ const DonatePage = () => {
             data-not-lazy
           />
           <div className='text-center h-screen flex items-center justify-center z-10 relative'>
-            <div className='max-w-4xl px-4 sm:px-6 pt-12'>
-              <h1 className='text-3xl sm:text-6xl lg:text-9xl font-extrabold leading-none drop-shadow tracking-tight'>
-                The Frontier of Innovation.
+            <div className='max-w-[72rem] px-4 sm:px-6 pt-12'>
+              <h1 className='text-2xl sm:text-6xl lg:text-6xl font-extrabold leading-none drop-shadow tracking-tight'>
+                Noto Peninsula (Japan) Earthquake donation fund.
+                <p className='mt-8 text-2xl sm:text-6xl lg:text-5xl font-extrabold leading-none drop-shadow tracking-tight'>
+                  (令和6年能登半島地震災害支援募金)
+                </p>
               </h1>
-              <p className='sm:text-xl mt-6 sm:mt-10 mb-8 sm:mb-14'>
-                Your localized hero description here
+              <p className='text-2xl sm:text-4xl mt-6 sm:mt-10'>
+                Astar is with all people who are affected by the disaster.
               </p>
-              <div className='sm:flex justify-center space-y-4 sm:space-y-0 sm:space-x-4'></div>
+              <p className='font-extrabold text-2xl sm:text-4xl mt-10 sm:mt-10 sm:mb-14'>
+                Astar Native Address
+                Y6bqhr65aCCydqbrD7gCNZKKSxK7k9pU4mNBhfMEy8MyCnj
+              </p>
+              {/* Ethereum Address: YYYYYYYYYY */}
+              <p className='text-2xl sm:text-2xl mb-8 sm:mb-14'>
+                皆さまからのご寄付はAstar FoundationおよびStartale
+                Labsを通じてgas手数料や税金等（消費税含む）を除き全て本災害の緊急救援活動、被災地復旧支援として被災者や被災地のために活用させていただきます。
+                今後の詳しい使いみちと寄付報告は、この募金ページのほか、Xなどを通じてお知らせします。
+              </p>
+              {/* <div className='sm:flex justify-center space-y-4 sm:space-y-0 sm:space-x-4'></div> */}
             </div>
           </div>
         </div>
