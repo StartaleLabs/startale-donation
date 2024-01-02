@@ -1,9 +1,23 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import React, { useState } from "react";
+import DonationOptionsModal from "../Components/donationOptionsModal";
+
+export default function Home() {  
+  const [showDonationOptionsModal, setShowDonationOptionsModal] = useState(
+    false
+  );
+
+  const toggleDonationOptionsModal = () => {
+    setShowDonationOptionsModal(!showDonationOptionsModal);
+  };
+
+  const closeDonationOptionsModal = () => {
+    setShowDonationOptionsModal(false);
+  };
 
 
-export default function Home() {
   return (
     <main>
      <div>
@@ -75,20 +89,14 @@ export default function Home() {
                 今後の詳しい使いみちと寄付報告は、この募金ページのほか、Xなどを通じてお知らせします。
               </p>
             <div className="mt-12 flex justify-center">
-            <Link
-              href={`https://medium.com/@astarnetworkdonationfollower`}
-              target="_blank"
+            <button
               className="mb-20 flex items-center leading-none gap-1 p-5 border border-white rounded-[18px] bg-[rgba(255,255,255,0.30)] text-[24px]"
-                >
-              How to donate
-              <Image
-                  src="/images/icon_external.png"
-                  width={24}
-                  height={24}
-                  alt=""
-                  className="flx-shrink-0"
-                />
-            </Link>
+              onClick={toggleDonationOptionsModal}>
+              寄付のお手続きについて
+            </button>
+              {showDonationOptionsModal && (
+            <DonationOptionsModal onClose={toggleDonationOptionsModal} />
+          )}
             <Link
               href="https://astar.subscan.io/account/Y6bqhr65aCCydqbrD7gCNZKKSxK7k9pU4mNBhfMEy8MyCnj"
               target="_blank"
