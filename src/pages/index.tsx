@@ -76,9 +76,23 @@ export default function Home() {
               </p>
             <div className="mt-12 flex justify-center">
             <Link
-              href="https://astar.subscan.io/account/Y6bqhr65aCCydqbrD7gCNZKKSxK7k9pU4mNBhfMEy8MyCnj"
+              href={`https://medium.com/me/stories/drafts`}
               target="_blank"
               className="mb-20 flex items-center leading-none gap-1 p-5 border border-white rounded-[18px] bg-[rgba(255,255,255,0.30)] text-[24px]"
+                >
+              How to donate
+              <Image
+                  src="/images/icon_external.png"
+                  width={24}
+                  height={24}
+                  alt=""
+                  className="flx-shrink-0"
+                />
+            </Link>
+            <Link
+              href="https://astar.subscan.io/account/Y6bqhr65aCCydqbrD7gCNZKKSxK7k9pU4mNBhfMEy8MyCnj"
+              target="_blank"
+              className="ml-8 mb-20 flex items-center leading-none gap-1 p-5 border border-white rounded-[18px] bg-[rgba(255,255,255,0.30)] text-[24px]"
             >
               Block Explorer
               <Image
