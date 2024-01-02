@@ -76,7 +76,7 @@ export default function Home() {
               </p>
             <div className="mt-12 flex justify-center">
             <Link
-              href={`https://medium.com/@astarnetworkdonation`}
+              href={`https://medium.com/@astarnetworkdonationfollower`}
               target="_blank"
               className="mb-20 flex items-center leading-none gap-1 p-5 border border-white rounded-[18px] bg-[rgba(255,255,255,0.30)] text-[24px]"
                 >
