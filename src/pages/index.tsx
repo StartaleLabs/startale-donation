@@ -74,7 +74,7 @@ export default function Home() {
                 Labsを通じてgas手数料や税金等（消費税含む）を除き全て本災害の緊急救援活動、被災地復旧支援として被災者や被災地のために活用させていただきます。
                 今後の詳しい使いみちと寄付報告は、この募金ページのほか、Xなどを通じてお知らせします。
               </p>
-              <div className="mt-12 flex justify-center">
+            <div className="mt-12 flex justify-center">
             <Link
               href="https://astar.subscan.io/account/Y6bqhr65aCCydqbrD7gCNZKKSxK7k9pU4mNBhfMEy8MyCnj"
               target="_blank"
@@ -89,6 +89,20 @@ export default function Home() {
                 className="flx-shrink-0"
               />
             </Link>
+            <Link
+        href={`https://x.com/intent/tweet?text=令和6年能登半島地震 緊急支援募金%0ANoto Peninsula (Japan) Earthquake donation fund.%0A（Startale/ Astar）%20%23ASTAR%20%23Web3%0A&url=https://donation.startale.com/`}
+        target="_blank"
+        className="ml-8 mb-20 flex items-center leading-none gap-1 p-5 border border-white rounded-[18px] bg-[rgba(255,255,255,0.30)] text-[24px]"
+          >
+        Share on X
+             <Image
+                src="/images/icon_external.png"
+                width={24}
+                height={24}
+                alt=""
+                className="flx-shrink-0"
+              />
+        </Link>
           </div>
             </div>
           </div>
