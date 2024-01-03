@@ -60,26 +60,19 @@ export default function DonationOptionsModal({ onClose }) {
         </div>
         <ul>
           {selectedLanguage === "english" && (
-            <><li>
-              <a href="/exchange-donate-english" className="text-black">
-                polkadot.js
+            <li>
+              <a href="https://medium.com/@astarnetworkdonationfollower/guidance-on-astr-transfer-from-evmwallet-for-those-without-astr-in-evmwallet-such-as-metamask-e4529b79bffe" className="text-black">
+                here
               </a>
-            </li><li>
-              <a href="/exchange-donate-english" className="text-black">
-                metamask snap
-              </a>
-            </li></>
+            </li>
           )}
           {selectedLanguage === "japanese" && (
-            <><li>
-              <a href="/exchange-donate-japanese" className="text-black">
-                polkadot.js
+            <li>
+              <a href="https://medium.com/@astarnetworkdonationfollower/evmwalletからのastr送金手順についてのご案内-evmwallet-metamaskなど-にastrをお持ちでない方-a46e487cee18"
+              className="text-black">
+                こちらから
               </a>
-            </li><li>
-              <a href="/exchange-donate-japanese" className="text-black">
-                metamask snap
-              </a>
-            </li></>
+            </li>
           )}
         </ul>
         <div className="text-center mt-4">
@@ -87,32 +80,20 @@ export default function DonationOptionsModal({ onClose }) {
         </div>
         <ul>
           {selectedLanguage === "english" && (
-            <>
               <li>
-                <a href="/evm-donate-polkadot-english" className="text-black">
-                  polkadot.js
+                <a href="https://medium.com/@astarnetworkdonationfollower/guide-for-transferring-astr-from-evmwallet-for-users-holding-astr-in-evmwallet-such-as-metamask-422a35851c3f"
+                className="text-black">
+                  here
                 </a>
               </li>
-              <li>
-                <a href="/evm-donate-metamask-english" className="text-black">
-                  metamask snap
-                </a>
-              </li>
-            </>
           )}
           {selectedLanguage === "japanese" && (
-            <>
-              <li>
-                <a href="/evm-donate-polkadot-japanese" className="text-black">
-                  polkadot.js
-                </a>
-              </li>
-              <li>
-                <a href="/evm-donate-metamask-japanese" className="text-black">
-                  metamask snap
-                </a>
-              </li>
-            </>
+            <li>
+              <a href="https://medium.com/@astarnetworkdonationfollower/evmwalletからのastr送金手順についてのご案内-evmwallet-metamaskなど-にastrをお持ちの方-c0488cbd32e3"
+              className="text-black"><br/>
+                すでにASTRがWalletにある方はこちらから
+              </a>
+            </li>
           )}
         </ul>
       </div>
