@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-export default function DonationOptionsModal({ onClose }) {
-  const [selectedLanguage, setSelectedLanguage] = useState("english");
+interface Props {
+  onClose: () => void;
+}
 
-  const handleLanguageChange = (language) => {
+const DonationOptionsModal: React.FC<Props> = ({ onClose }) => {
+  const [selectedLanguage, setSelectedLanguage] = useState("japanese");
+
+  const handleLanguageChange = (language: string) => {
     setSelectedLanguage(language);
   };
 
-  const handleModalOverlayClick = (e) => {
-    if (e.target.classList.contains("modal-overlay")) {
+  const handleModalOverlayClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    if ((e.target as Element).classList.contains("modal-overlay")) {
       onClose();
     }
   };
@@ -18,14 +22,12 @@ export default function DonationOptionsModal({ onClose }) {
     if (selectedLanguage === "english") {
       return {
         donateFromExchanges: "Donate from Exchanges",
-        donateFromEVMWallets: "Donate from EVM Wallets. Ex.Metamask",
-        english: "Here"
+        donateFromEVMWallets: "Donate from EVM Wallets. Ex.Metamask"
       };
-    } else if (selectedLanguage === "japanese") {
+    } else {
       return {
         donateFromExchanges: "取引所から寄付する",
-        donateFromEVMWallets: "EVMウォレット(Metamaskなど)から寄付する",
-        japanese: "こちらから",
+        donateFromEVMWallets: "EVMウォレット(Metamaskなど)から寄付する"
       };
     }
   };
@@ -58,7 +60,7 @@ export default function DonationOptionsModal({ onClose }) {
         <div className="text-center mb-4">
           <h2 className="text-2xl font-extrabold text-black">{links.donateFromExchanges}</h2>
         </div>
-        <ul>
+        <ul className="mb-4">
           {selectedLanguage === "english" && (
             <li>
               <a href="https://medium.com/@astarnetworkdonationfollower/guidance-on-astr-transfer-from-evmwallet-for-those-without-astr-in-evmwallet-such-as-metamask-e4529b79bffe" className="text-black">
@@ -75,10 +77,10 @@ export default function DonationOptionsModal({ onClose }) {
             </li>
           )}
         </ul>
-        <div className="text-center mt-4">
+        <div className="text-center mb-4">
           <h2 className="text-2xl font-extrabold text-black">{links.donateFromEVMWallets}</h2>
         </div>
-        <ul>
+        <ul className="mb-4">
           {selectedLanguage === "english" && (
               <li>
                 <a href="https://medium.com/@astarnetworkdonationfollower/guide-for-transferring-astr-from-evmwallet-for-users-holding-astr-in-evmwallet-such-as-metamask-422a35851c3f"
@@ -90,7 +92,7 @@ export default function DonationOptionsModal({ onClose }) {
           {selectedLanguage === "japanese" && (
             <li>
               <a href="https://medium.com/@astarnetworkdonationfollower/evmwalletからのastr送金手順についてのご案内-evmwallet-metamaskなど-にastrをお持ちの方-c0488cbd32e3"
-              className="text-black"><br/>
+              className="text-black">
                 すでにASTRがWalletにある方はこちらから
               </a>
             </li>
@@ -100,3 +102,5 @@ export default function DonationOptionsModal({ onClose }) {
     </div>
   );
 }
+
+export default DonationOptionsModal;
