@@ -4,19 +4,12 @@ import Link from "next/link";
 import React, { useState } from "react";
 import DonationOptionsModal from "../Components/donationOptionsModal";
 
-export default function Home() {  
-  const [showDonationOptionsModal, setShowDonationOptionsModal] = useState(
-    false
-  );
+export default function Home() {
+  const [showDonationOptionsModal, setShowDonationOptionsModal] = useState<boolean>(false);
 
   const toggleDonationOptionsModal = () => {
     setShowDonationOptionsModal(!showDonationOptionsModal);
   };
-
-  const closeDonationOptionsModal = () => {
-    setShowDonationOptionsModal(false);
-  };
-
 
   return (
     <main>
